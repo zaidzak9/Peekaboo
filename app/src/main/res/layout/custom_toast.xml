@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relativeLayout1"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:background="@color/red">
+
+<!--    <TextView-->
+<!--        android:layout_width="300dp"-->
+<!--        android:layout_height="500dp"-->
+<!--        android:background="#d5d5dd"/>-->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150sp"
+        android:layout_height="150sp"
+        android:src="@drawable/peekaboo_logo_new"
+        app:layout_constraintBottom_toTopOf="@+id/gifImageView" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifImageView"
+        android:layout_width="200sp"
+        android:layout_height="200sp"
+        android:src="@drawable/peekaboogif" />
+
+    <Button
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:id="@+id/okBtn"
+        android:background="#00a2ff"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:layout_marginBottom="35sp"
+        android:text="Too Close Kiddo!"/>
+
+
+<!--    <TextView-->
+<!--        android:textAppearance="?android:attr/textAppearanceLarge"-->
+<!--        android:id="@+id/textView1" android:layout_height="wrap_content"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:background="@color/white"-->
+<!--        android:text="WARNING!"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:textColor="@android:color/black">-->
+<!--    </TextView>-->
+
+
+<!--    <TextView-->
+<!--        android:id="@+id/textView2"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:background="@color/white"-->
+<!--        android:text="You are too close to the screen move away!"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:layout_below="@+id/imageView1"-->
+<!--        android:layout_marginBottom="10dp"-->
+<!--        android:textColor="@android:color/black">-->
+<!--    </TextView>-->
+
+</LinearLayout>
